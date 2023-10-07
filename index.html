@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesis - Da Hecatombe à Criação</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+		color: #fff;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.0);
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video id="videoElement" autoplay muted loop>
+            <source src="video1.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+        <div class="overlay">
+            <h1>Nesis - Da Hecatombe à Criação</h1>
+		<p>O planeta terra é uma extenssão enorme e alienigenas invadiram o planeta</p>
+            <button id="iniciarBtn">INICIAR</button>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById('iniciarBtn').addEventListener('click', function() {
+            window.location.href = 'frame1/ini.html'; // Substitua 'sua_outra_pagina.html' pelo nome real da sua página de destino
+        });
+    </script>
+</body>
+</html>
