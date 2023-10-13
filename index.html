@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nesis - Da Hecatombe à Criação</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Space+Grotesk&display=swap');
+	    @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Space+Grotesk&display=swap');
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            color: #fff;
+		color: #fff;
         }
 
         .video-container {
@@ -31,30 +31,32 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: auto;
-            padding: 20px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             background: rgba(0, 0, 0, 0.0);
         }
 
         h1 {
             margin-bottom: 20px;
-            font-family: Gabarito;
-            font-size: 80px; /* Aumentamos o tamanho da fonte */
-            color: #0BFF23;
-            text-shadow:
-                0 0 5px #0BFF23,
-                0 0 10px #0BFF23,
-                0 0 15px #0BFF23,
-                0 0 20px #000,
-                0 0 25px #000,
-                0 0 30px #000;   
+	    font-family: Gabarito;
+		 font-size: 50px;
+    color: #0BFF23; /* A cor verde neon especificada */
+    text-shadow:
+        0 0 5px #0BFF23,  /* Sombra mais próxima do texto */
+        0 0 10px #0BFF23, /* Sombra média */
+        0 0 15px #0BFF23, /* Sombra mais distante */
+        0 0 20px #000,    /* Sombra externa preta para dar contraste */
+        0 0 25px #000,    /* Sombra externa adicional para intensificar o contraste */
+        0 0 30px #000;   
         }
 
-        p {
-            font-family: Space Grotesk;
-            font-weight: bold; /* Tornamos o texto negrito */
-            font-size: 24px; /* Aumentamos o tamanho da fonte */
-        }
+	    p {
+		    font-family: Space Grotesk;
+	    }
 
         button {
             padding: 10px 20px;
@@ -71,13 +73,14 @@
         </video>
         <div class="overlay">
             <h1>Nêsis - Da Hecatombe à Criação</h1>
-            <p>O planeta terra é uma extensão enorme e alienígenas invadiram o planeta</p>
+		<p>O planeta terra é uma extenssão enorme e alienigenas invadiram o planeta</p>
             <button id="iniciarBtn">INICIAR</button>
+
         </div>
     </div>
     <script>
         document.getElementById('iniciarBtn').addEventListener('click', function() {
-            window.location.href = 'https://frame1.vercel.app/';
+            window.location.href = 'https://frame1.vercel.app/'; // Substitua 'sua_outra_pagina.html' pelo nome real da sua página de destino
         });
     </script>
 </body>
