@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nesis - Da Hecatombe à Criação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body, html {
             margin: 0;
@@ -11,7 +12,13 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-		color: #fff;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
         }
 
         .video-container {
@@ -40,14 +47,33 @@
         }
 
         h1 {
-            color: #fff;
-            margin-bottom: 20px;
+            font-family: Cormorant Garamond;
+            color: #FFFF00;
+            margin-bottom: 50px;
+            font-size: 150px;
+            text-shadow: 2px 2px 4px rgba(0, 255, 163, 0.7);
         }
 
-        button {
-            padding: 10px 20px;
-            font-size: 20px;
-            cursor: pointer;
+        p {
+            font-family: Space Grotesk;
+            font-weight: bold;
+            color: #00FFA3;
+            font-size: 30px;
+        }
+
+        /* Posicionamento dos ícones */
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 24px;
+            color: #fff;
         }
     </style>
 </head>
@@ -58,15 +84,22 @@
             Seu navegador não suporta a tag de vídeo.
         </video>
         <div class="overlay">
-            <h1>Nesis - Da Hecatombe à Criação</h1>
-		<p>O planeta terra é uma extenssão enorme e alienigenas invadiram o planeta</p>
+            <h1>Nêsis</h1>
             <button id="iniciarBtn">INICIAR</button>
-
         </div>
     </div>
+    
+    <!-- Ícones das redes sociais -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/soupedro/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/salespedro/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/irrigador" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://pedrocode.vercel.app/" target="_blank"><i class="fas fa-briefcase"></i></a>
+    </div>
+
     <script>
         document.getElementById('iniciarBtn').addEventListener('click', function() {
-            window.location.href = 'https://frame1.vercel.app/'; // Substitua 'sua_outra_pagina.html' pelo nome real da sua página de destino
+            window.location.href = 'https://frame1.vercel.app/';
         });
     </script>
 </body>
