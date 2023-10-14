@@ -16,9 +16,13 @@
         }
 
         button {
-            padding: 10px 20px;
-            font-size: 20px;
-            cursor: pointer;
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
         }
 
         .video-container {
@@ -41,12 +45,14 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+           
             align-items: center;
             background: rgba(0, 0, 0, 0.0);
         }
 
         h1 {
+            top: 0;         
+            width: 80%;
             font-family: Cormorant Garamond;
             color: #FFFF00;
             margin-bottom: 50px;
@@ -58,7 +64,8 @@
             font-family: Space Grotesk;
             font-weight: bold;
             color: #00FFA3;
-            font-size: 30px;
+            font-size: 25px;
+	  
         }
 
         /* Posicionamento dos ícones */
@@ -78,13 +85,38 @@
     </style>
 </head>
 <body>
+
+
     <div class="video-container">
+
+
         <video id="videoElement" autoplay muted loop>
             <source src="video1.mp4" type="video/mp4">
             Seu navegador não suporta a tag de vídeo.
         </video>
+
         <div class="overlay">
-            <h1>Nêsis</h1>
+ <marquee behavior="scroll" direction="left" scrollamount="30" >
+<p>Nesis é um game inspirado no curta Nêsis projeto de inciação cientifica.
+Segundo Josué de Castro existem duas maneiras de morrer de fome; não comer nada e definhar de maneira vertiginosa até o fim, ou comer de maneira inadequada e entrar em um regime de carências ou deficiências específicas, capaz de provocar um estado que pode também conduzir à morte. Mais grave ainda que a fome aguda e total, devido a suas repercussões sociais e econômicas é o fenômeno da fome crônica ou parcial que corrói silenciosamente inúmeras populações no mundo. Pela falta permanente de determinados elementos nutritivos, em seus regimes habituais, grupos inteiros de população se deixam morrer lentamente de fome, apesar de comerem todos os dias. Garapa é uma mistura caseira de água com açúcar; muitas famílias no mundo e também no Brasil dependem dessa mistura para sobreviver. GARAPA documenta a vida de algumas dessas famílias.
+
+No final do século XIX, os irmãos Lumiere entretetiam plateias parisienses com curtos filmes mostrando cenas do cotidiano (Um Trem chegando a uma estação, uma saída de funcionários de uma fábrica), e todos ficavam maravilhados com aquelas "fotos que se movimentavam" em uma tela.
+No decorrer do século XX o cinematógrafo evoluiu para se tornar uma grande indústria de entretenimento, e também uma expressão de arte. Estilos, escolas, atores, etc, foram todos esses insumos que sofisticaram nossa forma de assistir e apreciar essas imagens que se movimentam.
+Século XXI: Jovens acessam o youtube e se divertem com vídeos de desafios, com péssima qualidade, mostrando alguém fazendo algo estúpido.
+
+O retardo na adoção do IPv6, a escassez persistente de IPv4 e a disseminação crescente do CGNAT (Carrier-Grade Network Address Translation) têm compelido corporações, como o Facebook, a se apoiarem cada vez mais nos metadados para personalizar e otimizar a entrega de conteúdo.
+
+Esse fenômeno não apenas dita a nossa experiência na internet, mas também configura as paisagens tecnológicas atuais. No entanto, tal busca incessante pela relevância pode, às vezes, resultar em um fenômeno que poderíamos chamar de "pensamento único", é imprescindível reconhecer que a inovação não é privilégio exclusivo das corporações de maior porte (google, microsoft, facebook). Emergentes tecnologias, exemplificadas pelo ChatGPT, OpenAi, MidJourney estão moldando o panorama tecnológico de maneira extraordinária sem a devida divulgação e conhecimento popular. A disseminação dessas inovações é uma responsabilidade compartilhada, independentemente de sua origem que é ameaçada por grandes corporações que descartam avanços que não são feitos por eles.
+
+        "Vida e Morte Severina" é uma das obras mais conhecidas brasileiras. Ela é um poema dramático em forma de auto de natal, escrito em 1955. A história retrata a vida difícil e sofrida do povo nordestino, especialmente dos retirantes que deixam o sertão em busca de uma vida melhor nas cidades litorâneas.
+
+        A obra descreve a jornada de um retirante, Severino, que sai do sertão em direção ao litoral em busca de melhores condições de vida, mas acaba encontrando muitas dificuldades ao longo do caminho. O poema aborda temas como a seca, a fome, a pobreza e a morte, e apresenta uma visão crua e realista da vida no Nordeste do Brasil.
+
+        "Vida e Morte Severina" é conhecida por sua linguagem concisa e direta, bem como por sua representação poética da dura realidade enfrentada pelo povo nordestino. A obra também explora questões existenciais e simbolismo relacionado à vida e à morte. Ela é considerada uma das obras mais importantes da literatura brasileira do século XX e uma das principais obras do movimento literário.</p>
+
+    </marquee>           
+ <h1>Nêsis</h1>
+		
             <button id="iniciarBtn">INICIAR</button>
         </div>
     </div>
